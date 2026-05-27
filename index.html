@@ -1,213 +1,377 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>비주류 문화 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>마곡 코인노래방 가이드 | 로컬 형이 알려주는 마곡역 가성비 노래방 전수 분석</title>
+  <meta name="description" content="마곡역 및 마곡나루 오피스 단지 주변 코인노래방과 비즈니스 노래방의 가격, 시설, 위생 상태를 10년 차 로컬 자영업자 브로의 눈으로 철저히 비교한 리얼 리포트.">
+  <meta name="keywords" content="마곡 코인노래방 가이드, 마곡역 코노 가격, 마곡나루 노래방 추천, 마곡 비즈니스 노래방, 마곡동 2차 회식">
+  <meta name="bpaas-design-system" content="swiss-minimal">
+  <meta name="bpaas-design-theme" content="kr-ocean">
+  <link rel="canonical" href="https://t3b05-mg-coin-guide.pages.dev">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="마곡 코인노래방 가이드 | 로컬 브로의 정찰 가이드">
+  <meta property="og:description" content="마곡역 및 마곡나루 오피스 단지 주변 코인노래방과 비즈니스 노래방의 가격, 시설, 위생 상태를 10년 차 로컬 자영업자 브로의 눈으로 철저히 비교한 리얼 리포트.">
+  <meta property="og:url" content="https://t3b05-mg-coin-guide.pages.dev">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
   <style>
     :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+      --bg-primary: #0a192f;
+      --bg-secondary: #172a45;
+      --accent: #00b4d8;
+      --accent-hover: #90e0ef;
+      --text-main: #f0f8ff;
+      --text-sub: #caf0f8;
+      --border-color: rgba(0, 180, 216, 0.25);
+      --font-family: 'Noto Sans KR', sans-serif;
     }
+    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.7;
     }
-    .wrapper {
-      max-width: 960px;
+    
+    .container {
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 80px 0;
+      padding: 0 20px;
     }
+    
+    /* Header */
     header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
+      background: rgba(10, 25, 47, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    header .header-inner {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
+      padding: 16px 0;
     }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
+    
+    .logo {
+      font-size: 1.4rem;
       font-weight: 800;
-      color: var(--charcoal-fg);
+      color: #fff;
       text-decoration: none;
-      letter-spacing: 0.05em;
+      letter-spacing: -0.03em;
     }
-    nav { display: flex; gap: 32px; }
+    .logo span { color: var(--accent); }
+    
+    nav { display: flex; gap: 24px; }
     nav a {
-      color: var(--charcoal-fg);
+      color: var(--text-sub);
       text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s;
     }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
+    nav a:hover { color: var(--accent); }
+    
+    /* Hero */
+    .hero-sec {
+      padding: 100px 0 80px 0;
+      text-align: center;
+      background: radial-gradient(circle at center, rgba(0, 180, 216, 0.08) 0%, transparent 70%);
+      border-bottom: 1px solid var(--border-color);
     }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
+    
+    .hero-sec h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+      color: #fff;
     }
-    .story-body {
-      font-family: var(--serif-font);
+    .hero-sec p {
+      font-size: 1.1rem;
+      color: var(--text-sub);
+      max-width: 700px;
+      margin: 0 auto 28px auto;
+    }
+    
+    .phone-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, var(--accent), #0077b6);
+      color: #0a192f;
+      font-weight: 800;
       font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
+      border-radius: 4px;
       text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
+      box-shadow: 0 4px 20px rgba(0, 180, 216, 0.3);
+      transition: all 0.3s;
+    }
+    
+    .phone-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 180, 216, 0.4);
+    }
+    
+    /* Content */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      padding: 60px 0;
+    }
+    
+    .main-text {
+      font-size: 1.05rem;
+      color: #e2e8f0;
+    }
+    
+    .main-text h2 {
+      font-size: 1.75rem;
+      color: #fff;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+    }
+    
+    .main-text p {
+      margin-bottom: 20px;
+    }
+    
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+    
+    .pricing-table th, .pricing-table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .pricing-table th {
+      background: rgba(0, 180, 216, 0.15);
+      color: var(--accent);
       font-weight: 700;
-      transition: all 0.3s ease;
     }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
+    
+    /* Sidebar */
+    .sidebar {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
     }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
+    
+    .widget {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
     }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
+    
+    .widget-title {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 16px;
       font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
+      border-bottom: 1px solid rgba(0, 180, 216, 0.2);
+      padding-bottom: 8px;
     }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
+    
+    /* Reviews */
+    .review-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 4px;
+      padding: 16px;
+      margin-bottom: 16px;
     }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
+    
+    .review-header {
       display: flex;
       justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
+      margin-bottom: 8px;
     }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
+    
+    .reviewer-name { font-weight: 700; font-size: 0.9rem; }
+    .review-stars { color: var(--accent); }
+    .review-content { font-size: 0.88rem; color: var(--text-sub); }
+    
+    /* Footer */
+    footer {
+      background: #05101e;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0;
+      color: var(--text-sub);
+      font-size: 0.9rem;
+    }
+    
+    footer .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .hero-sec h1 { font-size: 2rem; }
+      nav { display: none; }
     }
   </style>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "마곡 코인노래방 가이드",
+    "description": "강서구 마곡역 및 마곡나루 주변 10년 차 로컬 자영업자 형님이 철저히 비교 가이드하는 정찰제 코인 및 비즈니스 노래방 요금 분석.",
+    "telephone": "010-6279-0862",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "서울시 강서구 마곡동"
+    }
+  }
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>비주류 문화 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>비주류 문화</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
+
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">MAGOK<span>COIN</span></a>
+      <nav>
+        <a href="/">홈</a>
+        <a href="about.html">소개</a>
+        <a href="blog.html">블로그</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-sec">
+    <div class="container">
+      <div style="display:inline-block; font-size:0.75rem; letter-spacing:0.3em; color:var(--accent); font-family:monospace; margin-bottom:16px; text-transform:uppercase">// MAGOK LOCAL DIRECTORY</div>
+      <h1>마곡 코인노래방 가이드</h1>
+      <p>마곡 테크노밸리 오피스 단지 밤의 힐링 고민 완전 해결! 10년 차 동네 주민 자영업자 브로가 100% 실전 내돈내산으로 엄선해 구축한 마곡동 최고의 투명 정찰제 노래방과 꿀팁을 대방출합니다.</p>
+      <a href="tel:010-6279-0862" class="phone-btn">
+        <span>📞 VIP 예약 문의: 010-6279-0862</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="container content-grid">
+    <main class="main-text">
+      <h2>마곡 신도시의 밤, 오피스 상권 유흥에서 대성공하는 꿀단지 공식</h2>
+      <p>어서 와라 형님들, 그리고 사랑하는 아우들! 이 강서구 마곡 신도시 복판에서만 10년째 가게를 굴리고 동네 사장님들과 뜨겁게 소주잔 나누며 뒹굴어 온 로컬 형 브로다. 알다시피 마곡역과 마곡나루역 주변은 대기업 R&D 센터 직장인 아우들이 거대한 오피스 빌딩 숲에서 쏟아져 나와 1차로 트렌디한 삼겹살집이나 고급 이자카야를 꽉 메우는, 서울 서부에서 가장 활발하고 트렌디한 신생 상권이다. 밤늦게 기분 좋게 1차 술자리를 끝마치면 어김없이 "자, 2차는 흥겹게 마이크 좀 잡고 목청껏 노래 부르며 피로 좀 털어내자!" 하면서 자연스럽게 노래방으로 이동하게 마련이지.</p>
+      
+      <p>하지만 마곡은 신도시답게 화려한 간판들에 가려져, 1차 술집에서 술 취한 손님들 노리는 악질 삐끼들이나 광고 유령업자들이 판치는 동네이기도 하다. 길바닥에서 찌라시 요금표에 속거나 포털에 대량 복사된 가짜 마사지/노래방 낚시 블로그만 보고 덜컥 들어갔다간, 2차 계산서 룸비와 터무니없는 양주 세팅비 덤탱이를 보고 기분 다 상해서 동료들 앞에서 고개 푹 숙이는 굴욕 당하기 일쑤다. 나 역시 옛날에 마곡에 처음 발들였을 때 바가지 숱하게 당하며 피눈물 제대로 흘려봤다. 그래서 아우들은 더 이상 마곡 상권에서 대접하고도 기분 잡치는 호구 꼴 절대 당하지 않도록, 마이크 음향 사운드 압권이고 마인드 확실한 진짜 가성비 최고급 정찰제 비즈니스 노래방들만 엄선해 사이트를 결성하게 되었다.</p>
+      
+      <h2>마곡역 일대 최고의 노래방 인프라 3가지 결정적 조건</h2>
+      <p>마곡 상권에서 형이 최고라고 손꼽는 양심 가라오케들은 타 지역의 노후된 지하실 업소들과는 질적으로 궤를 달리한다.</p>
+      
+      <h3>하나, 쾌적하고 위생적인 최신식 지상 룸 환경</h3>
+      <p>마곡은 신축 건물들이 주를 이루기 때문에, 곰팡이 냄새나고 꿉꿉한 지하실의 옛날식 노래방과 차원이 다르다. 전 객실 매일 피톤치드 방역 소독을 실시하고 공기 청정기를 24시간 풀가동하여, 담배 찌든 내 없는 쾌적하고 청정한 비즈니스 룸 환경을 자랑한다. 거래처 높은 귀빈을 모셔도 고개가 절로 끄덕여질 거다.</p>
+      
+      <h3>둘, 심장을 울리는 명품 웅장한 사운드 스피커</h3>
+      <p>스트레스 풀러 마이크를 잡았을 때 삑삑거리는 사운드나 찢어지는 앰프 사운드가 나면 다들 흥이 식어 마이크를 놔 버리게 된다. 여기 선별된 룸들은 고가 라인의 최신 무선 마이크와 고성능 디지털 음향 조율기를 완비하여, 마치 개인 콘서트 홀에 온 것 같은 압도적 고품격 음향의 신세계를 보여준다.</p>
+      
+      <h3>셋, 빌지 위조 원천 방지 100% 약속제 요금</h3>
+      <p>유흥가 바닥의 해묵은 악폐습인 계산 시 '고무줄 가격 바가지 요금'을 완벽하게 파괴했다. 사전 예약 시 확정한 세트 단가와 고정 테이블 TC 요금표 이외에는 단 10원짜리 하나도 임의 기재될 수 없도록 1인 총괄 대표 책임하에 투명하게 빌지를 오픈한다.</p>
+      
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>구체적 스탠다드 세트 세부 내역</th>
+            <th>정찰 가격 (VAT 별도)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>양주 스탠다드 세트</td>
+            <td>양주 1병 + 수제 모둠 과일안주 + 무제한 맥주 및 청량음료 서비스 제공</td>
+            <td>220,000원 ~</td>
+          </tr>
+          <tr>
+            <td>테이블 TC (60분 기준)</td>
+            <td>시간당 1인 시간비용 고정 (정직한 정찰제 청구)</td>
+            <td>110,000원</td>
+          </tr>
+          <tr>
+            <td>고급 프라이빗 룸 렌탈</td>
+            <td>방음 및 대형 스크린 객실 사용료 정액</td>
+            <td>30,000원</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>눈탱이 방지하고 VIP로 마곡 밤을 수놓는 실전 가이드</h2>
+      <p>마곡 신도시에서 술자리 2차를 성공시키는 가장 확실한 노하우는 **"불법 유령 삐끼들이 난사하는 가짜 번호들은 칼같이 차단하고, 실제 현장을 컨트롤하는 1인 대표 총괄 실장 다이렉트 예약 번호 하나만 확실히 단골로 두는 것"**이다. 중간 브로커에게 연락하면 룸 배정도 늦고 덤탱이 요금의 주범이 된다. 현장 룸 퀄리티부터 파트너 마인드 교육까지 책임지고 직접 다 조율하는 1인 책임자 예약망 `010-6279-0862`로 다이렉트 유선 노크를 넣어 시간과 견적을 잡는 게 서비스도 훨씬 많이 챙기고 깔끔하게 입장하는 왕도 중의 왕도다. 형의 이름을 다 걸고 단 1원의 요금 기만 없이 염창동/마곡 일대 최고의 품격 있는 밤의 쉼터를 매칭해 주겠다.</p>
+    </main>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3 class="widget-title">📞 24시간 실시간 예약 상담</h3>
+        <p style="font-size:0.9rem; color:var(--text-sub); margin-bottom:16px;">마곡 신도시 최고의 가성비 고품격 룸 매칭! 사전 견적 조율부터 정성껏 가이드해 드립니다.</p>
+        <a href="tel:010-6279-0862" class="phone-btn" style="width:100%; justify-content:center;">010-6279-0862</a>
       </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h3>
-          <p>디지털 폰트가 전무하던 격변의 1960년대 한국 극장가를 상징하는 극영화 손그림 포스터와 당시 간판 화가들의 붓끝에서 창조된 특유의 볼드한 고딕 타이포그래피 서체들은 당대 시대적 ...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h3>
-          <p>한국 전통 찰현악기인 해금의 뽕나무 현에 가해지는 마찰력을 극대화하고 온도 및 습도 편차에 따르는 실크 현의 수축 팽창을 방어하기 위해 벌꿀에서 추출한 밀랍 왁스와 천연 벌꿀을 엄...</p>
-        </a>
-      
+      <div class="widget">
+        <h3 class="widget-title">💬 마곡 사장님들의 리얼 생생 리뷰</h3>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">마곡지산소장</span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <p class="review-content">"마곡역 주변에서 비즈니스 접대 할 때마다 항상 조마조마했는데 여기서 투명 정찰제 가이드 받고 예약해서 다녀왔더니 주대 정찰제 계산 칼같이 나와서 안심하고 대만족했습니다."</p>
+        </div>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h3>
-          <p>활자를 한 자 한 자 구리 틀에 부어 굳히던 19세기 활판 금속 활자 조각술은 잉크가 젖은 종이 속으로 압착되어 들어갈 때 생기는 특유의 깊은 양각 엠보싱 텍스처와 미세하게 무너지...</p>
-        </a>
-      
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">마곡나루엔지니어</span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <p class="review-content">"팀 회식 2차로 다녀왔는데 룸이 엄청 고급스럽고 방음이 최고였습니다. 스피커 사운드가 예술이라 스트레스 다 날리고 갑니다. 실장님 📞010-6279-0862 대박 추천입니다!"</p>
+        </div>
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h3>
-          <p>시간의 깊은 숨결이 고스란히 각인된 명품 악기 해금 현의 장인정신과 잊힌 60년대 활판 서체의 고독한 인쇄 미학을 추적하며 아날로그 감성을 축적해 나가는 컬렉터분들이라면, 소중한 ...</p>
-        </a>
-      
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">강서자영업청년</span>
+            <span class="review-stars">★★★★☆</span>
+          </div>
+          <p class="review-content">"친구들이랑 주말 밤 이벤트로 다녀왔는데 파트너 직원분들이 너무나 싹싹하게 대화 잘 통하고 과일안주도 넘 싱싱해서 돈이 아깝지 않은 대단한 힐링이었습니다."</p>
         </div>
       </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+    </aside>
   </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <p><strong>마곡 코인노래방 가이드</strong> | 대표번호: <a href="tel:010-6279-0862" style="color:var(--accent);">010-6279-0862</a></p>
+        <p style="font-size:0.8rem; margin-top:8px; opacity:0.7;">본 콘텐츠는 청소년 유해 매체에 해당하므로 19세 미만 미성년자의 열람을 엄격하게 금지하고 제한합니다.</p>
+      </div>
+      <p>&copy; 2026 마곡 코인노래방 가이드. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
